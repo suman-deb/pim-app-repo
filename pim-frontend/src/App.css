@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  padding: 30px;
+}
+
+.product-card {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.product-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.product-card p {
+  font-size: 1em;
+  color: #555;
+}
+.product-card button {
+  background: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-card button:hover {
+  background: #21a1f1;
+}
+.product-card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.product-card button:disabled:hover {
+  background: #ccc;
+}
+.product-card button:disabled:active {
+  background: #ccc;
+}
+.product-card button:disabled:focus {
+  outline: none;
+}
+.product-card button:disabled:focus-visible {
+  outline: 2px solid #61dafb;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
