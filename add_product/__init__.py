@@ -10,7 +10,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         data = req.get_json()
         logging.info(f"Received data: {data}")
         container = get_container()
-        print("Connection string is:", COSMOS_CONNECTION_STRING)
+        logging.info(f"Using Cosmos DB connection string: {COSMOS_CONNECTION_STRING}")
         if "id" not in data or "name" not in data or "price" not in data:
             raise ValueError("Missing one or more required fields")
 
